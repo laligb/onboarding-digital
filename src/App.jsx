@@ -34,11 +34,20 @@ function App() {
     setStep((c) => (c + 1 < tutorialData.length ? c + 1 : c));
   }
 
+  function prevStep() {
+    setStep((c) => (c - 1 >= 0 ? c - 1 : c));
+  }
+
   let currentCardData = tutorialData[step];
   console.log(currentCardData);
   return (
     <>
-      <Card data={currentCardData} nextPage={nextStep} step={step} />
+      <Card
+        data={currentCardData}
+        nextPage={nextStep}
+        step={step}
+        prevStep={prevStep}
+      />
     </>
   );
 }
