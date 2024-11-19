@@ -26,12 +26,18 @@ function App() {
       image: "",
     },
   ];
-  const [step] = useState(0);
+
+  const [step, setStep] = useState(0);
+
+  function nextStep() {
+    setStep((c) => (c + 1 < tutorialData.length ? c + 1 : c));
+  }
+
   let currentCardData = tutorialData[step];
   console.log(currentCardData);
   return (
     <>
-      <Card data={currentCardData} />
+      <Card data={currentCardData} nextPage={nextStep} />
     </>
   );
 }
