@@ -44,7 +44,6 @@ function App() {
 
   let currentCardData = tutorialData[step];
 
-  console.log(currentCardData);
   return (
     <>
       <Card
