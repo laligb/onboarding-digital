@@ -45,14 +45,15 @@ function App() {
   let currentCardData = tutorialData[step];
 
   return (
-    <>
+    <div className="bg-light">
       <Card
         data={currentCardData}
         nextPage={nextStep}
         prevStep={prevStep}
         length={lengthOfData}
+        setStep={setStep}
       />
-    </>
+    </div>
   );
 }
 

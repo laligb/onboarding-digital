@@ -7,3 +7,88 @@
 .read-the-docs {
   color: #888;
 }
+
+.dots {
+  max-height: 8px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.line {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.left-enter {
+  animation: left-enter 0.8s forwards;
+}
+
+.left-exit {
+  animation: left-exit 0.8s forwards;
+}
+
+.right-enter {
+  animation: right-enter 0.8s forwards;
+}
+
+.right-exit {
+  animation: right-exit 0.8s forwards;
+}
+
+@keyframes left-enter {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left-exit {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes right-enter {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right-exit {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animation-wrapper {
+  position: relative;
+  width: 18rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: none !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  transform: translateX(0);
+}
+
+.card-img-top {
+  height: 300px;
+}
