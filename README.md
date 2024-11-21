@@ -53,3 +53,8 @@ npm run dev
 4. Open your browser and navigate to:
 
 [http://localhost:5173](http://localhost:5173)
+
+## Live Version
+
+You can view the live version of the application at the following URL:
+[https://onboarding-digital-murex.vercel.app/](https://onboarding-digital-murex.vercel.app/)
